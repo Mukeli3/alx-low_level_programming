@@ -6,7 +6,11 @@
  * @s1: first string
  * @s2: second string
  * @n: amount of bytes
+<<<<<<< HEAD
  * Return: pointer to the allocated memory
+=======
+ * Return:pointer to the allocated memory
+>>>>>>> fe53db4fda55e751a8928311e9d4989cb9d2c533
  * if malloc fails, status value is equalto 98
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
