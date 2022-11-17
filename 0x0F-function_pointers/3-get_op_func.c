@@ -2,7 +2,7 @@
 
 /**
  * get_op_func - selects the correct function to perform
- * the operator asked by user
+ * the operation asked by user
  * @s: char operator
  * Return: pointer to the function that corresponds to the operator
  */

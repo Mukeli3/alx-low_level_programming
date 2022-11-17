@@ -10,6 +10,7 @@ int op_add(int a, int b)
 {
 	return (a + b);
 }
+
 /**
  * op_sub - subtracts two numbers
  * @a: first number
@@ -22,7 +23,7 @@ int op_sub(int a, int b)
 }
 /**
  * op_mul - multiplies two numbers
- * @a: firstb number
+ * @a: first number
  * @b: second number
  * Return: multiplication
  */
