@@ -9,7 +9,7 @@
  * @len: length of the string
  * @next: points to the next node
  * description: singly linked list node structure
- * for project
+ *		for project
  */
 typedef struct list_s
 {
