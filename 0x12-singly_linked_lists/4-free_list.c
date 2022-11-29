@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdlib.h>
 /**
  * free_list - frees a list_t list
  * @head: a pointer to the list_t list
