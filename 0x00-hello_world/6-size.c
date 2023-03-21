@@ -7,17 +7,17 @@
  */
 int main(void)
 {
-	int myint;
-	float myfloat;
-	char mychar;
-	long int mylongint;
-	long long int mylonglongint;
+	int intType;
+	float floatType;
+	char charType;
+	long int longintType;
+	long long int longlongintType;
 
-	printf("%lu/n", sizeof(mychar));
-	printf("%lu/n", sizeof(myint));
-	printf("%lu/n", sizeof(mylongint));
-	printf("%lu/n", sizeof(mylonglongint));
-	printf("%lu/n", sizeof(myfloat));
+	printf("Size of a char: %lu/n", sizeof(charType));
+	printf("Size of an int: %lu/n", sizeof(intType));
+	printf("Size of a long int: %lu/n", sizeof(longintType));
+	printf("Size of a long long int: %lu/n", sizeof(longlongintType));
+	printf("Size of a float: %lu/n", sizeof(floatType));
 
 	return (0);
 }
