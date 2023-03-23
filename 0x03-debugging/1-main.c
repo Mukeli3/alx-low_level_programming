@@ -2,12 +2,13 @@
 
 /**
 * main - causes an infinite loop
+* the used variable i is not increased
+* there should be i++ in the code
 * Return: 0
 */
 
 int main(void)
 {
-	/* missing i++ */
 	int i;
 
 	printf("Infinite loop incoming :(\n");
