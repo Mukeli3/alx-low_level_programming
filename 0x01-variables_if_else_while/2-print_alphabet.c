@@ -7,9 +7,10 @@
  */
 int main(void)
 {
-	if (int x = 'A'; x <= 'Z'; x++)
+	for (int x = 'A'; x <= 'Z'; x++)
 	{
-		putchar(tolower(x));
+		int lower_x = tolower(x);
+		putchar(lower_x);
 	}
 	return (0);
 }
