@@ -13,7 +13,7 @@ int main(void)
 
 	scanf("%d", &n);
 	
-	last_digit = n % 10;
+	struct last_digit = n % 10;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
