@@ -12,8 +12,8 @@ int main(void)
 	int n;
 
 	scanf("%d", &n);
-
-	int last_digit = n % 10;
+	
+	last_digit = n % 10;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
