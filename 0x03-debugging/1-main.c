@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	/* missing i++ */
+	// missing i++
 
         int i;
 
