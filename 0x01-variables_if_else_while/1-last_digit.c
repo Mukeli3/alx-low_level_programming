@@ -10,7 +10,7 @@
 int main(void)
 {
 	int n;
-	int l = last_digit;
+	int last_digit;
 	last_digit = n % 10;
 
 	scanf("%d", &n);
