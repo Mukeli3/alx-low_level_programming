@@ -3,9 +3,8 @@
 
 /**
  * _puts - a function that puts
- * @str: a string to puts function
+ * @str: a parameter to _puts function
  *
- * Return: nothing
  */
 void _puts(char *str)
 {
