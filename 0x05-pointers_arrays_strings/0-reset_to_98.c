@@ -4,7 +4,7 @@
 /**
  * reset_to_98 - update the value of a pointer to an int
  * to 98
- * @n - an integer input to a pointer
+ * @n: an integer input to a pointer
  *
  * Return: nothing
  */
