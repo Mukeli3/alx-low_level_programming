@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <unistd.h>
 /**
  * _puts - prints a string, followed by a neew line, to stdout
  * @str: string to print
