@@ -4,11 +4,11 @@
 
 /**
  * _isalpha - checks for alphabetic character
- * @c: unused parameter
+ * @c: a character
  *
  * Return: 1 if character is alphabetic, 0 otherwise
  */
-int __attribute__ ((unused)) _isalpha(int c)
+int _isalpha(int c)
 {
 	char ch;
 
