@@ -4,16 +4,16 @@
 
 /**
  * _isalpha - checks for alphabetic character
- * @c: reference parameter
+ * @c: unused parameter
  *
  * Return: 1 if character is alphabetic, 0 otherwise
  */
 int _isalpha(int c)
 {
-	char hc;
+	char ch;
 
-	scanf("%c", &hc);
-	if (isalpha(hc) == 0)
+	scanf("%c", &ch);
+	if (isalpha(ch) == 0)
 	{
 		return (1);
 	}
