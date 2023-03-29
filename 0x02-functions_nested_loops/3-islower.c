@@ -1,5 +1,6 @@
 #include "main.h"
 #include <ctype.h>
+#include <stdio.h>
 
 /**
  * _islower - checks for lowercase letters
@@ -9,9 +10,9 @@
  */
 int _islower(int c)
 {
-	char alphabet;
+	char ch;
 
-	alphabet = c;
+	scanf("%c", &ch);
 	if (islower(c))
 	{
 		return (1);
