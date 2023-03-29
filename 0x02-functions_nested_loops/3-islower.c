@@ -9,9 +9,10 @@
  */
 int _islower(int c)
 {
-	char a;
+	char alphabet;
 
-	if (islower(a))
+	alphabet = c;
+	if (islower(c))
 	{
 		return (1);
 	}
