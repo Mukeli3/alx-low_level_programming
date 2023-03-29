@@ -12,7 +12,7 @@ int _isalpha(int c)
 {
 	char ch;
 
-	scanf("%c", &ch);
+	scanf("%c",&ch);
 	if (isalpha(ch) == 0)
 	{
 		return (1);
