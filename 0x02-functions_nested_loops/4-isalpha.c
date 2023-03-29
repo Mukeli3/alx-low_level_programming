@@ -8,12 +8,12 @@
  *
  * Return: 1 if character is alphabetic, 0 otherwise
  */
-int _isalpha(int c)
+int __attribute__ ((unused)) _isalpha(int c)
 {
 	char ch;
 
 	scanf("%c",&ch);
-	if (isalpha(ch) == 0)
+	if (isalpha(ch))
 	{
 		return (1);
 	}
