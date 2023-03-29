@@ -4,11 +4,11 @@
 
 /**
  * _abs - computes the absolute value of an integer
- * @int: a data type
+ * @n: a number
  *
  * Return: Always 0 (Success)
  */
-int _abs(int)
+int _abs(int n)
 {
 	int num;
 
