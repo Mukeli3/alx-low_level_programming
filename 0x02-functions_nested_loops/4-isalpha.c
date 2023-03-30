@@ -12,8 +12,6 @@ int _isalpha(int c)
 {
 	char ch;
 
-	void(c);
-
 	scanf("%c",&ch);
 	if (isalpha(ch))
 	{
