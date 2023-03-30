@@ -10,10 +10,9 @@
  */
 int _isalpha(int c)
 {
-	char ch;
+	int i;
 
-	scanf("%c",&ch);
-	if (isalpha(ch))
+	if (i >= 'a' && i <= 'z' || i >= 'A' && i <= 'z')
 	{
 		return (1);
 	}
