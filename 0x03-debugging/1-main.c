@@ -2,8 +2,9 @@
 
 /**
 * main - causes an infinite loop
-* the used variable i is not increased
+* the used variable i is not incremented
 * there should be i++ in the code
+* remove the first printf statement
 * Return: 0
 */
 
