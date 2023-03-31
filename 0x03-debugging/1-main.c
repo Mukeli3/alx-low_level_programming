@@ -4,7 +4,7 @@
 * main - causes an infinite loop
 * the used variable i is not incremented
 * there should be i++ in the code
-* the main function is called to cause an infinite loop
+* the main function description
 * Return: 0
 */
 
