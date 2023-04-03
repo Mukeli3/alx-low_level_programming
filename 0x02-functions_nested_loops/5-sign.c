@@ -13,17 +13,20 @@ int print_sign(int n)
 	scanf("%d", &n);
 	if (n > 0)
 	{
-		printf("%s", "+");
+		_putchar('+');
+		_putchar(',');
 		return (1);
 	}
 	else if (n == 0)
 	{
-		printf("%d", 0);
+		_putchar('0');
+		_putchar(',');
 		return (0);
 	}
 	else
 	{
-		printf("%s", "-");
+		_putchar('-');
+		_putchar(',');
 		return (-1);
 	}
 }
