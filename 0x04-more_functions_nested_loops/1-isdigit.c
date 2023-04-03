@@ -1,5 +1,6 @@
 #include "main.h"
 #include <ctype.h>
+#include <stdio.h>
 
 /**
  * _isdigit - checks for a digit (0 through 9)
@@ -11,8 +12,8 @@ int _isdigit(int c)
 {
 	int i;
 
-	scanf("%c", &i);
-	if (isdigit(i));
+	scanf("%d", &i);
+	if (isdigit(i))
 	{
 		return (1);
 	}
