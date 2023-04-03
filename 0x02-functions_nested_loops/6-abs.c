@@ -6,7 +6,7 @@
  * _abs - computes the absolute value of an integer
  * @n: an integer
  *
- * Return: Always 0 (On Success)
+ * Return: absolute value of n
  */
 int _abs(int n)
 {
@@ -16,5 +16,5 @@ int _abs(int n)
 	scanf("%d", &n);
 	printf("%d", a);
 
-	return (0);
+	return (a);
 }
