@@ -4,13 +4,12 @@
 
 /**
  * _abs - computes the absolute value of an integer
- * @n: a number
+ * @n: an integer
  *
  * Return: Always 0 (Success)
  */
 int _abs(int n)
 {
-	scanf("%d", &n);
 	_putchar(abs(n));
 	_putchar('\n');
 	return (0);
