@@ -10,10 +10,8 @@
  */
 int _isdigit(int c)
 {
-	int i;
-
-	scanf("%d", &i);
-	if (isdigit(i))
+	scanf("%d", &c);
+	if (isdigit(c))
 	{
 		return (1);
 	}

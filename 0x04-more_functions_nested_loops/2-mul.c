@@ -10,11 +10,9 @@
  */
 int mul(int a, int b)
 {
-	int c;
-	int d;
 	int mul;
 
-	mul = c * d;
+	mul = a * b;
 	printf("%d\n", mul);
 	return (0);
 }
