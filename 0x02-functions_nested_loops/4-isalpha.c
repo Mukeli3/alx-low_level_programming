@@ -10,11 +10,9 @@
  */
 int _isalpha(int c)
 {
-	char ch;
+	scanf("%d",&c);
 
-	scanf("%c",&ch);
-
-	if (isalpha(ch))
+	if (isalpha(c))
 	{
 		return (1);
 	}
