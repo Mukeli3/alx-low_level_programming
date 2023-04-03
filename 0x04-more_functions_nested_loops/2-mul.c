@@ -12,7 +12,8 @@ int mul(int a, int b)
 {
 	int mul;
 
-	scanf("%d %d", &a, &b);
+	scanf("%d", &a);
+	scanf("%d", &b);
 	mul = a * b;
 	printf("%d", mul);
 	return (0);
