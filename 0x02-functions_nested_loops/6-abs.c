@@ -10,8 +10,6 @@
  */
 int _abs(int n)
 {
-	int num;
-
-	printf("\n %d", abs(num));
+	printf("\n %d", abs(n));
 	return (0);
 }
