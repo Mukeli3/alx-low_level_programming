@@ -10,7 +10,10 @@
  */
 int _abs(int n)
 {
-	_putchar(abs(n));
-	_putchar('\n');
+	int a;
+
+	a = abs(n);
+	scanf ("%d", &n);
+	printf("%d\n", a);
 	return (0);
 }
