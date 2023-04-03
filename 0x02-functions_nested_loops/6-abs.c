@@ -14,6 +14,7 @@ int _abs(int n)
 
 	a = abs(n);
 	scanf("%d", &n);
-	putchar('a');
+	printf("%d", a);
+
 	return (0);
 }
