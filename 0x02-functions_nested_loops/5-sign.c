@@ -10,22 +10,20 @@
  */
 int print_sign(int n)
 {
-	char ch;
-
-	scanf("%c", &ch);
-	if (ch > 0)
+	scanf("%d", &n);
+	if (n > 0)
 	{
-		printf("%s", "++");
+		printf("%s", "+");
 		return (1);
 	}
-	else if (ch == 0)
+	else if (n == 0)
 	{
 		printf("%d", 0);
 		return (0);
 	}
 	else
 	{
-		printf("%s", "--");
+		printf("%s", "-");
 		return (-1);
 	}
 }
