@@ -13,7 +13,7 @@ int _isupper(int c)
 	char alphabet;
 
 	scanf("%c", &alphabet);
-	if (isupper(alphabet))
+	if (isupper(alphabet) == 0)
 	{
 		return (1);
 	}
