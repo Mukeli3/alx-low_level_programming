@@ -10,10 +10,11 @@
  */
 int _isupper(int c)
 {
-	char alphabet;
+	char ch;
 
-	scanf("%c", &alphabet);
-	if (isupper(alphabet) == 0)
+	scanf("%c", &ch);
+
+	if (isupper(ch))
 	{
 		return (1);
 	}
