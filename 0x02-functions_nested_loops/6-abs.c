@@ -13,7 +13,6 @@ int _abs(int n)
 	int a;
 
 	a = abs(n);
-	scanf ("%d", &n);
+	scanf("%d", &n);
 	printf("%d\n", a);
-	return (0);
 }
