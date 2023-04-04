@@ -6,7 +6,7 @@
  * @a: first parameter
  * @b: second parameter
  *
- * Return: 0 on success
+ * Return: result
  */
 int mul(int a, int b)
 {
@@ -15,6 +15,5 @@ int mul(int a, int b)
 	scanf("%d", &a);
 	scanf("%d", &b);
 	mul = a * b;
-	printf("%d", mul);
-	return (0);
+	return (mul);
 }

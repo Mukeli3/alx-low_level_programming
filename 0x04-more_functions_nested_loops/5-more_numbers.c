@@ -8,16 +8,16 @@
  */
 void more_numbers(void)
 {
-	int i;
-	int n;
+	char c;
+	char h;
 
-	i = 0;
-	n = 0;
-	for (i = 0; i <= 14; i++)
+	c = 48;
+	h = 48;
+	for (c = 48; c <= '\016'; ++c)
 	{
-		_putchar(i);
-		for (n = 0; n <= 10; n++)
-			_putchar(n);
+		_putchar(c);
+		for (h = 48; c <= 58; h++)
+			_putchar(h);
 	}
 	_putchar('\n');
 }
