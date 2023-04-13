@@ -13,9 +13,9 @@ void reverse_array(int *a, int n)
 {
 	int i;
 
-	scanf("%d", &a[i]);
 	for (i = 0; i < n; i++)
 	{
+		scanf("%d", &a[i]);
 		_putchar(a[i]);
 		_putchar(',');
 		_putchar(' ');
