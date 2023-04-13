@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+#include <stdio.h>
 
 /**
  * reverse_array - reverses the content of an array of intergers
@@ -12,17 +12,16 @@
 void reverse_array(int *a, int n)
 {
 	int i;
-	int j;
 
-	for (i = 0; i < n / 2; i++)
-	{
-		j = a[i];
-		a[i] = a[n - i - 1];
-		a[n - i - 1] = j;
-	}
 	for (i = 0; i < n; i++)
 	{
-		_putchar(a[i]);
+		printf("%d", a[i]);
+	}
+	_putchar('\n');
+
+	for (i = n - 1; i >= 0; i--)
+	{
+		printf("%d", a[i]);
 	}
 	_putchar('\n');
 }
