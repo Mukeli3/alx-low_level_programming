@@ -22,10 +22,10 @@ int _strcmp(char *s1, char *s2)
 	}
 	else if (result > 0)
 	{
-		return (15);
+		return (result);
 	}
 	else
 	{
-		return (-15);
+		return (result);
 	}
 }
