@@ -9,19 +9,19 @@
  */
 void print_to_98(int n)
 {
-	int i;
+	char i;
 
 	for (i = n; i <= 98; i++)
 	{
-		printf("%d", i);
+		_putchar(i);
 		_putchar(',');
 		_putchar(' ');
 	}
 	for (i = n; i >= 98; i--)
 	{
+		_putchar(i);
 		_putchar(',');
 		_putchar(' ');
-		printf("%d", i);
 	}
 	_putchar('\n');
 }
