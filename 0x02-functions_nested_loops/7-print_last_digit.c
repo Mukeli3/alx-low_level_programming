@@ -7,14 +7,11 @@
  *
  * Return: the value of the last digit
  */
-int print_last_digit(int)
+int print_last_digit(int i)
 {
-	int i;
 	int n;
 
 	n = i % 10;
 	scanf("%d", &i);
-	printf("%d\n", n);
-
-	return (0);
+	return (n);
 }
