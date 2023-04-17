@@ -9,13 +9,13 @@
  */
 void print_to_98(int n)
 {
-	char i;
+	int i;
 
 	for (i = n; i <= 98; i++)
 	{
-		_putchar(i);
-		_putchar(',');
-		_putchar(' ');
+		printf("%d", i);
+		printf("%c", ',');
+		printf("%c", ' ');
 	}
 	for (i = n; i >= 98; i--)
 	{
