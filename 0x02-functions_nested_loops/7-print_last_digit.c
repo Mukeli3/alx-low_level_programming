@@ -13,7 +13,7 @@ int print_last_digit(int i)
 
 	scanf("%d", &i);
 	n = i % 10;
-	_putchar('n');
+	_putchar(n);
 	_putchar('\n');
 	return (n);
 }
