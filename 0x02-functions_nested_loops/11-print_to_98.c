@@ -29,7 +29,7 @@ void print_to_98(int n)
 			printf("%c", ' ');
 		}
 	}
-	if (i = n)
+	if (i == n)
 	{
 		printf("%d", i);
 	}
