@@ -20,7 +20,6 @@ void print_to_98(int n)
 			printf("%c", ' ');
 		}
 	}
-	printf("%c", '\n');
 	for (i = n; i <= 98; i--)
 	{
 		printf("%d", i);
@@ -30,4 +29,5 @@ void print_to_98(int n)
 			printf("%c", ' ');
 		}
 	}
+	_putchar('\n');
 }
