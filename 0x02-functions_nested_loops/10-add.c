@@ -12,6 +12,6 @@ int add(int i, int n)
 	int sum;
 
 	sum = i + n;
-	printf("%d\n", sum);
+	printf("%d", sum);
 	return (0);
 }
