@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	/* loop not iterated, i++ should be at the end of the loop*/
+	/* missing i++ inside the while loop*/
 
 	int i;
 
