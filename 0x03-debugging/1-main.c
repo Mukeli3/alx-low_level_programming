@@ -2,9 +2,7 @@
 
 /**
 * main - causes an infinite loop
-* the used variable i is not incremented
-* there should be i++ in the code
-* the main function description
+*
 * Return: 0
 */
 
@@ -19,6 +17,7 @@ int main(void)
 	while (i < 10)
 	{
 		putchar(i);
+		/* missing i++ */
 	}
 
 	printf("Infinite loop avoided! \\o/\n");
