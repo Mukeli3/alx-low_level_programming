@@ -11,14 +11,16 @@
  */
 void reverse_array(int *a, int n)
 {
-	int i;
+	int i = 0;
+	int aux[n];
 
 	for (i = 0; i < n; i++)
 	{
-		scanf("%d", &*a);
-		_putchar(*a);
-	for (i = n - 1; i >= 0; i--)
-		_putchar(*a);
+		aux[n - 1 - i] = a[i];
+		_putchar(a[i]);
+	for (i = 0; i < n; i++)
+		a[i] = aux[i];
+		_putchar(a[i]);
 	}
 	_putchar('\n');
 }
