@@ -14,8 +14,6 @@ char *_strpbrk(char *s, char *accept)
 {
 	char *match = strpbrk(s, accept);
 
-	printf("%s\n", match);
-
 	if (s == NULL || accept == NULL)
 	{
 		return (NULL);
