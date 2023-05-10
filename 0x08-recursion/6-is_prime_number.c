@@ -11,18 +11,13 @@
 int is_prime_number(int n)
 {
 	int i;
-
-	if (n == i)
-	{
-		return (0);
-	}
-	else if (n % i == 0)
+	
+	if (i == 1 || n % i == 0)
 	{
 		return (1);
 	}
 	else
 	{
-		i = i - 1;
-		is_prime_number(n);
+		return (0);
 	}
 }
