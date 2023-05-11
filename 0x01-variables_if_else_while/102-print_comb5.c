@@ -9,19 +9,20 @@ int main(void)
 {
 	int i, j;
 
-	for (i = 00; i <= 98; i++)
+	for (i = 0; i <= 98; i++)
 	{
-		for (j = 01; j <= 99; j++)
-		{
-			putchar(i);
-			putchar(j);
-			if (i + j < 35)
+		for (j = 1; j <= 99; j++)
+			if (j != i)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(i + '0');
+				putchar(j + '0');
+				if (i + j < 35)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-		}
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
