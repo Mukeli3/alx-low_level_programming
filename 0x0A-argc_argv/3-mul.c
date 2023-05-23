@@ -12,16 +12,19 @@ int main(int argc, char *argv[])
 {
 	int i, mul;
 
+	mul = 1;
+
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			mul = 1;
 			int x = strtol(argv[i], NULL, 10);
+
 			mul = mul * x;
 		}
 		printf("%d\n", mul);
 	}
+
 	if (argc < 2)
 	{
 		printf("Error\n");
