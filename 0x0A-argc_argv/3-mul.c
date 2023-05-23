@@ -12,10 +12,10 @@ int main(int argc, char *argv[])
 {
 	int i, mul;
 
-	mul = 1;
-
-	if (argc > 1)
+	if (argc > 2)
 	{
+		mul = 1;
+
 		for (i = 1; i < argc; i++)
 		{
 			int x = strtol(argv[i], NULL, 10);
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		printf("%d\n", mul);
 	}
 
-	if (argc < 2)
+	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
