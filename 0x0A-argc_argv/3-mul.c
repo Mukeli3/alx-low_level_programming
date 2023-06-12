@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			int x = strtol(argv[i], NULL, 10);
+
 			mul = mul * x;
 		}
 		printf("%d\n", mul);
