@@ -9,7 +9,7 @@
  * Return: 1 if one of the number contains symbols that
  * are not digits, always 0 on success
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int i, n;
 	int sum = 0;
@@ -29,10 +29,7 @@ int main(int argc, char **argv)
 				return (1);
 			}
 		}
-	}
-	for (i = 1; i < argc; i++)
-	{
-		sum = sum + atoi(argv[i]);
+		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 	return (0);
