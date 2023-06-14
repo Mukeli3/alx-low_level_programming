@@ -14,8 +14,19 @@ char *str_concat(char *s1, char *s2)
 {
 	char *fr;
 	int i, j;
+	int n1, n2;
 
-	fr = malloc((strlen(s1) + strlen(s2) + 1) * sizeof(char));
+	if (s1 == NULL || strcmp(s1, "") == 0)
+	{
+		n1 = 0;
+	}
+	if (s2 == NULL || strcmp(s2, "") == 0)
+	{
+		n2 = 0;
+	}
+	n1 = strlen(s1);
+	n2 = strlen(s2);
+	fr = malloc((n1 + n2 + 1) * sizeof(char));
 	if (fr == NULL)
 	{
 		return (NULL);
