@@ -24,10 +24,9 @@ char *str_concat(char *s1, char *s2)
 	{
 		fr[i] = s1[i];
 	}
-	for (j = 0; s2[j] != '\0'; j++)
+	for (j = 0; s2[j] != '\0'; j++, i++)
 	{
 		fr[i] = s2[j];
-		i++;
 	}
 	fr[i] = '\0';
 	return (fr);
