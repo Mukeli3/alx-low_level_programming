@@ -13,7 +13,6 @@ void print_all(const char * const format, ...)
 {
 	int i, j = 0;
 	char *h, *sep = "";
-	float t;
 	va_list args;
 
 	va_start(args, format);
@@ -31,8 +30,8 @@ void print_all(const char * const format, ...)
 				printf("%s%d", sep, i);
 				break;
 			case 'f':
-				t = va_arg(args, double);
-				printf("%s%f", sep, t);
+				printf("%s", sep);
+				printf("%f",va_arg(args, double));
 				break;
 			case 'c':
 				i = va_arg(args, int);
@@ -42,11 +41,13 @@ void print_all(const char * const format, ...)
 				h = va_arg(args, char *);
 				if (h == NULL)
 				{
-					printf("(nil)");
-					break;
+					h = "(nil)";
 				}
 				printf("%s%s", sep, h);
 				break;
+			default:
+				j++;
+				continue;
 		}
 		sep = ", ";
 		j++;
