@@ -16,10 +16,13 @@ size_t list_len(const list_t *h)
 	const list_t *temp;
 
 	temp = h;
-
-	if (h->next == NULL)
+	if (h == NULL)
 	{
 		return (0);
+	}
+	if (h->next == NULL)
+	{
+		return (1);
 	}
 	if (temp->next != NULL)
 	{
@@ -28,7 +31,6 @@ size_t list_len(const list_t *h)
 	}
 	if (temp->next == NULL)
 	{
-		temp = temp->next;
 		count++;
 	}
 	return (count);
