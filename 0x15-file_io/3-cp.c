@@ -19,23 +19,31 @@ void replicate_text(char *file_from, char *file_to)
 	do {
 		Re = read(fd1, buffer, 1024);
 		if (fd1 == -1 || Re == -1)
+		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
-		exit(98);
+			exit(98);
+		}
 		Wr = write(fd2, buffer, Re);
 		if (fd2 == -1 || Wr == -1)
+		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
-		exit(99);
+			exit(99);
+		}
 		i++;
 	} while (Re != 0);
 
 	cl1 = close(fd1);
 	if (cl1 == -1)
+	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd1);
-	exit(100);
+		exit(100);
+	}
 	cl2 = close(fd2);
 	if (cl2 == -1)
+	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2);
-	exit(100);
+		exit(100);
+	}
 }
 
 /**
@@ -48,8 +56,10 @@ void replicate_text(char *file_from, char *file_to)
 int main(int argc, char **argv)
 {
 	if (argc != 3)
+	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-	exit(97);
+		exit(97);
+	}
 
 	replicate_text(argv[1], argv[2]);
 	return (0);
