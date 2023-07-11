@@ -18,7 +18,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (text_content)
 		while (text_content[size])
 			size++;
-	wrt = write(fd, filename, size);
+	wrt = write(fd, text_content, size);
 	if (fd == -1 || wrt == -1)
 		return (-1);
 	return (1);
