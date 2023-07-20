@@ -10,7 +10,12 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int i = 0, pow = 1;
+	int *ptr;
 	unsigned int dec = 0;
+
+	ptr = malloc(sizeof(unsigned int) * dec);
+	if (!ptr)
+		return (0);
 
 	if (b == NULL)
 		return (0);
@@ -24,13 +29,12 @@ unsigned int binary_to_uint(const char *b)
 		{
 			if (b[i] != 0 && b[i] != 1)
 				return (0);
-			else
-			{
-				dec = dec + ((b[i] - 48) * pow);
-				pow = pow * 2;
-				i--;
-			}
+
+			dec = dec + ((b[i] - 48) * pow);
+			pow = pow * 2;
+			i--;
 		}
 	}
+	free(ptr);
 	return (dec);
 }
