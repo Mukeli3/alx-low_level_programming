@@ -9,13 +9,8 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int i = 0, pow = 1;
-	int *ptr;
+	int i = 0, pow = 1;i
 	unsigned int dec = 0;
-
-	ptr = malloc(sizeof(unsigned int) * dec);
-	if (!ptr)
-		return (0);
 
 	if (b == NULL)
 		return (0);
@@ -25,7 +20,7 @@ unsigned int binary_to_uint(const char *b)
 		while (b[i] != '\0')
 			i++;
 		i--;
-		while (b[i] > 0)
+		while (i > 0)
 		{
 			if (b[i] != 0 && b[i] != 1)
 				return (0);
@@ -36,5 +31,5 @@ unsigned int binary_to_uint(const char *b)
 		}
 	}
 	free(ptr);
-	return (dec);
+	return (0);
 }
