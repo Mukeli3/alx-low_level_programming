@@ -9,7 +9,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int i = 0, pow = 1;i
+	int i = 0, pow = 1;
 	unsigned int dec = 0;
 
 	if (b == NULL)
@@ -30,6 +30,5 @@ unsigned int binary_to_uint(const char *b)
 			i--;
 		}
 	}
-	free(ptr);
 	return (0);
 }
