@@ -24,10 +24,12 @@ unsigned int binary_to_uint(const char *b)
 		{
 			if (b[i] != 0 && b[i] != 1)
 				return (0);
-
-			dec = dec + ((b[i] - 48) * pow);
-			pow = pow * 2;
-			i--;
+			else
+			{
+				dec = dec + ((b[i] - 48) * pow);
+				pow = pow * 2;
+				i--;
+			}
 		}
 	}
 	return (dec);
