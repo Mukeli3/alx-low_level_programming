@@ -22,7 +22,7 @@ unsigned int binary_to_uint(const char *b)
 		i--;
 		while (i >= 0)
 		{
-			if (b[i] != 0 && b[i] != 1)
+			if (b[i] != '0' && b[i] != '1')
 				return (0);
 
 			dec = dec + ((b[i] - 48) * pow);
@@ -30,5 +30,5 @@ unsigned int binary_to_uint(const char *b)
 			i--;
 		}
 	}
-	return (0);
+	return (dec);
 }
