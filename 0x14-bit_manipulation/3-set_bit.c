@@ -8,7 +8,7 @@
  *
  * Return: 1 on success, -1 on error
  */
-int set_it(unsigned long int *n, unsigned int index)
+int set_bit(unsigned long int *n, unsigned int index)
 {
 	int bit = 1;
 
