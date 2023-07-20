@@ -4,7 +4,7 @@
  * print_binary - function prints the binary representation of a number
  * @n: number to be converted to binary
  *
- * @Return: nothing
+ * Return: nothing
  */
 void print_binary(unsigned long int n)
 {
