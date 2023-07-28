@@ -289,15 +289,12 @@ int main(int argc, char *argv[])
 	int op, rd;
 
 	(void)argc;
-	printf("Our code is here\n");
 	op = open(argv[1], O_RDONLY);
-	printf("Our code gets here\n");
 	if (op == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
 		exit(98);
 	}
-	printf("got here successfully\n");
 	header = malloc(sizeof(Elf64_Ehdr));
 	if (header == NULL)
 	{
