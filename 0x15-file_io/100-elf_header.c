@@ -44,7 +44,7 @@ void print_elf_magic(unsigned char *e_ident)
 	while (i < EI_NIDENT)
 	{
 		printf("%02x", e_ident[i]);
-		if(i == EI_NIDENT - 1)
+		if (i == EI_NIDENT - 1)
 			printf("\n");
 		else
 			printf(" ");
@@ -287,9 +287,13 @@ int main(int argc, char *argv[])
 {
 	Elf64_Ehdr *header;
 	int op, rd;
+	off_t seek;
 
 	(void)argc;
 	op = open(argv[1], O_RDONLY);
+
+	seek = lseek(op, 0, SEEK_CUR);
+
 	if (op == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
@@ -310,6 +314,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: `%s`: No such file\n", argv[1]);
 		exit(98);
 	}
+	printf("current offset of file prwtest: %ld \n", seek);
 	file_is_elf(header->e_ident);
 	printf("ELF Header:\n");
 	print_elf_magic(header->e_ident);
