@@ -274,6 +274,7 @@ void close_elf_file(int fd)
 		exit(98);
 	}
 }
+int main(int argc, char *argv[]);
 
 /**
  * main - function displays ELF header information at ELF file start
