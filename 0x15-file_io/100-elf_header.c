@@ -288,12 +288,9 @@ int main(int argc, char *argv[])
 {
 	Elf64_Ehdr *header;
 	int op, rd;
-	off_t seek;
 
 	(void)argc;
 	op = open(argv[1], O_RDONLY);
-
-	seek = lseek(op, 0, SEEK_CUR);
 
 	if (op == -1)
 	{
