@@ -35,7 +35,7 @@ void file_is_elf(unsigned char *e_ident)
  */
 void print_elf_magic(unsigned char *e_ident)
 {
-	int i;
+	int i = 0;
 
 	printf("  Magic:   ");
 
