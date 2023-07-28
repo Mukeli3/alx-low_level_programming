@@ -312,7 +312,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: `%s`: No such file\n", argv[1]);
 		exit(98);
 	}
-	printf("current offset of file prwtest: %ld \n", seek);
 	file_is_elf(header->e_ident);
 	printf("ELF Header:\n");
 	print_elf_magic(header->e_ident);
