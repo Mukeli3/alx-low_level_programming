@@ -1,5 +1,5 @@
 #include "lists.h"
- 
+
 /**
  * insert_dnodeint_at_index - function inserts a new node at a given position
  * @h: pointer to a list pointer
@@ -10,7 +10,7 @@
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	size_t i;
+	size_t i = 0;
 	dlistint_t *new, *temp;
 
 	if (!h)
@@ -20,7 +20,12 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (!new)
 		return (NULL);
 	if (idx == 1)
-		;
+	{
+		new->prev = NULL;
+		new->next = *h;
+		new->n = n;
+		*h = new;
+	}
 	else
 	{
 		while (i < idx - 1)
